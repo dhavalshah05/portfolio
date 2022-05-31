@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.section-header {
+    @apply text-[42px] uppercase font-lato font-bold
+}

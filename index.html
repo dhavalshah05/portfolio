@@ -2,10 +2,118 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Rubik:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
-    <title>Tailwind Starter</title>
+    <title>Portfolio</title>
 </head>
 <body>
-<h1 class="text-[90px]">Hello</h1>
+
+<!--region navigation-->
+<nav class="h-[80px] flex justify-end items-center bg-white">
+    <ul class=" flex mr-[140px] flex-row gap-[44px]">
+        <li class="text-black text-[#606BF1] underline underline-offset-4 decoration-[#606BF1] uppercase cursor-pointer font-lato text-[22px]">
+            About
+        </li>
+        <li class="text-black hover:text-[#606BF1] hover:underline underline-offset-4 decoration-[#606BF1] uppercase cursor-pointer font-lato text-[22px]">
+            Projects
+        </li>
+        <li class="text-black hover:text-[#606BF1] hover:underline underline-offset-4 decoration-[#606BF1] uppercase cursor-pointer font-lato text-[22px]">
+            Contact
+        </li>
+    </ul>
+</nav>
+<!--endregion navigation-->
+
+<!--region what i do-->
+<section class="bg-[#132C47] w-screen">
+    <div class="flex flex-col p-[140px]">
+        <h2 class="section-header text-[#E1ECF3]">What I do?</h2>
+        <p class="mt-[50px] text-[#E1ECF3] text-[28px] font-lato font-regular">
+            I am an application developer having 5+ years of experience, who build apps which are simple in terms of UX
+            and rich in terms of UI and functionality.
+            &nbsp;Currently, I am focused on building beautiful apps using <span class="text-[#FF8578] cursor-pointer">Jetpack Compose.</span>
+        </p>
+    </div>
+</section>
+<!--endregion what i do-->
+
+<!--region projects-->
+<section class="bg-white] p-[140px]">
+    <h2 class="text-[#132C47] section-header">What I have created?</h2>
+    <section class="flex flex-row py-[20px] mt-[140px] items-center justify-center gap-[200px]">
+        <div>
+            <div class="w-[250px] h-[388px] bg-black"></div>
+        </div>
+        <div>
+            <h2 class="font-lato font-medium text-[60px] text-[#132C47]">Navex</h2>
+            <p class="w-[565px] mt-[10px] font-lato font-regular text-[24px] text-[#132C47]">
+                It helps users to virtually see the exhibition map so they can know where the particular shop or store
+                is located. On top of that, users can buy items from running exhibitions.
+            </p>
+            <button class="px-[17px] py-[6px] mt-[25px] font-lato font-regular text-[14px] text-[#8495A0] border border-[#8495A0] rounded-[4px]">
+                Open in play store
+            </button>
+        </div>
+    </section>
+    <section class="flex flex-row py-[20px] mt-[50px] items-center justify-center gap-[200px]">
+        <div>
+            <h2 class="font-lato font-medium text-[60px] text-[#132C47]">KidCare</h2>
+            <p class="w-[565px] mt-[10px] font-lato font-regular text-[24px] text-[#132C47]">
+                It helps parents to find care givers for their children. It shows people based on reviews and location of the parent.
+            </p>
+            <button class="px-[17px] py-[6px] mt-[25px] font-lato font-regular text-[14px] text-[#8495A0] border border-[#8495A0] rounded-[4px]">
+                Open in play store
+            </button>
+        </div>
+        <div>
+            <div class="w-[250px] h-[388px] bg-black"></div>
+        </div>
+    </section>
+    <section class="flex flex-row py-[20px] mt-[50px] items-center justify-center gap-[200px]">
+        <div>
+            <div class="w-[250px] h-[388px] bg-black"></div>
+        </div>
+        <div>
+            <h2 class="font-lato font-medium text-[60px] text-[#132C47]">Reelvolution</h2>
+            <p class="w-[565px] mt-[10px] font-lato font-regular text-[24px] text-[#132C47]">
+                Different fishing leagues can be organised using this application. Users can participate in the running competitions and they can win exiting prices.
+            </p>
+            <button class="px-[17px] py-[6px] mt-[25px] font-lato font-regular text-[14px] text-[#8495A0] border border-[#8495A0] rounded-[4px]">
+                Open in play store
+            </button>
+        </div>
+    </section>
+    <section class="flex flex-row py-[20px] mt-[50px] items-center justify-center gap-[200px]">
+        <div>
+            <h2 class="font-lato font-medium text-[60px] text-[#132C47]">Auto Redial</h2>
+            <p class="w-[565px] mt-[10px] font-lato font-regular text-[24px] text-[#132C47]">
+                It redials a given number until it gets connected. Users can tweak some settings to change auto redial time and other things.
+            </p>
+            <button class="px-[17px] py-[6px] mt-[25px] font-lato font-regular text-[14px] text-[#8495A0] border border-[#8495A0] rounded-[4px]">
+                Open in play store
+            </button>
+        </div>
+        <div>
+            <div class="w-[250px] h-[388px] bg-black"></div>
+        </div>
+    </section>
+</section>
+<!--endregion projects-->
+
+<!--region footer-->
+<section class="flex flex-row p-[140px] items-center justify-between bg-[#F2F8FC]">
+    <h2 class="text-[#132C47] section-header">Where to contact me?</h2>
+    <div class="flex flex-row gap-[60px]">
+        <div class="h-[80px] w-[80px] bg-[#132C47] rounded-full"></div>
+        <div class="h-[80px] w-[80px] bg-[#132C47] rounded-full"></div>
+        <div class="h-[80px] w-[80px] bg-[#132C47] rounded-full"></div>
+        <div class="h-[80px] w-[80px] bg-[#132C47] rounded-full"></div>
+    </div>
+</section>
+<!--endregion footer-->
 </body>
 </html>
