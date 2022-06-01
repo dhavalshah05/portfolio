@@ -3,9 +3,9 @@
 @tailwind utilities;
 
 .section-container {
-    @apply max-w-[1100px] mx-auto p-[60px]
+    @apply max-w-[1100px] mx-auto p-[30px] md:p-[60px]
 }
 
 .section-header {
-    @apply text-[32px] uppercase font-lato font-bold
+    @apply text-[24px] md:text-[32px] uppercase font-lato font-bold
 }
