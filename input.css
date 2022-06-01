@@ -9,3 +9,13 @@
 .section-header {
     @apply text-[24px] md:text-[32px] uppercase font-lato font-bold
 }
+
+.project-title {
+    @apply font-lato font-medium text-[24px] md:text-[32px] text-[#132C47]
+}
+
+.project-details {
+    @apply mt-[10px] font-lato font-normal text-[#132C47];
+    @apply text-[16px] md:text-[20px];
+    @apply text-center md:text-left;
+}
