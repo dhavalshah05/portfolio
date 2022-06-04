@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "tailwindcss -i input.css -o ./css/style.css",
-    "watch": "tailwindcss -i input.css -o ./css/style.css --watch"
+    "build_css": "tailwindcss -i public/input.css -o ./public/css/style.css",
+    "watch_css": "tailwindcss -i public/input.css -o ./public/css/style.css --watch",
+    "start": "npm run build_css && node app.js"
   },
   "keywords": [],
   "author": "",
