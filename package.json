@@ -4,13 +4,20 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "tailwindcss -i input.css -o ./css/style.css",
-    "watch": "tailwindcss -i input.css -o ./css/style.css --watch"
+    "build_css": "tailwindcss -i public/input.css -o ./public/css/style.css",
+    "watch_css": "tailwindcss -i public/input.css -o ./public/css/style.css --watch",
+    "start": "npm run build_css && node app.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "tailwindcss": "3.0.24"
+    "tailwindcss": "3.0.24",
+    "typescript": "4.7.3",
+    "@types/node": "17.0.39",
+    "@types/express": "4.17.13"
+  },
+  "dependencies": {
+    "express": "4.18.1"
   }
 }
